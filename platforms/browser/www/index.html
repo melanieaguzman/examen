@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Conexion</title>
+       
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+         <header>
+             </header>
+             <div class="conteiner">
+                            <h1 > Ingreso de Usuarios. </h1>
+                            </div>
+            <div class="contenedor">
+            <div>
+            <div id="menu" class="menu" style="height: 100vh;">
+                <button class="waves-effect waves-light btn blue btn" style="font-family:boton;" onclick="Registro()">Registro</button>
+                <button class="red btn" style="font-family:boton;" onclick="Login()">Login</button>
+            </div>
+            </div>
+            <div>
+            <div id="registro" class=hide>
+               
+                <input type="email" id="email" placeholder="correo@electronico.com">
+                <input type="password" id="pass" placeholder="password">
+                <button class="blue btn" style="font-family:boton;" onclick="enviar()">Enviar</button>
+                <button class="blue btn" style="font-family:boton;" onclick="Cerrar()">Salir</button>
+                <h5 id='Reg'></h5>
+                
+            </div>
+            </div>
+            <div>
+            <div id="login" class="hide" style="height: 100vh;">
+                <div class="container">
+                    <h5 id="log" class=""></h5>
+                    <input type="email" id="Lemail" placeholder="correo@electronico.com">
+                    <input type="password" id="Lpass" placeholder="password">
+                    <button class="blue btn" style="font-family:boton;" id="Blogin" onclick="acceso()">login</button>
+                    <button class="blue btn" style="font-family:boton;" onclick="cerrar()">Salir</button>
+                </div>   
+                    <div class="">
+                        <input type="number" id="id" placeholder="Id">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="number" id="semestre" placeholder="Semestre">
+                        <input type="text"  id="clase" placeholder="Clase">
+                        <input type="number" id="calificacion" placeholder="Calificacion">
+                        <input type="number" id="lat" placeholder="Latitud">
+                        <input type="number" id="long" placeholder="Longitud">
+
+                        <button class="blue darken-4 btn" style="font-family:boton;" onclick="guardar()">Guardar</button>
+                        <button class="green btn" style="font-family:boton;" onclick="buscar()">Buscar</button>
+                        <button class="amber darken-4 btn" style="font-family:boton;" onclick="actualizar()">Actualizar</button>
+                        <button class="red btn" style="font-family:boton;" onclick="borrar()">Borrar</button>
+                        <button class="blue lighten-4 btn black-text" style="font-family:boton;" onclick="limpiar()">Limpiar</button>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+                <div id="map"  style="height: 90vh;">
+                        
+                </div>
+                <footer>
+                        <a> Todos los derechos reservados &copy; ,2019 </a>		
+                    </footer>
+        
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/fastclick.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/materialize.js"></script>
+    </body>
+</html>
